@@ -1,0 +1,116 @@
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    /*(paragraphs)*/
+    --Very-light-gray: hsl(0, 0%, 95%);
+    /*(background, headings, buttons)*/
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    color: var(--transparent-white);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    padding: 8rem 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+h3 {
+    color: var(--Very-light-gray);
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+img {
+    margin-bottom: 2.5rem;
+}
+
+p {
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.card-bright-orange {
+    background-color: var(--bright-orange);
+    border-radius: 8px 8px 0 0;
+    padding: 2.5rem;
+}
+
+.card-dark-cyan {
+    background-color: var(--dark-cyan);
+    padding: 2.5rem;
+}
+
+.card-very-dark-cyan {
+    background-color: var(--very-dark-cyan);
+    border-radius: 0 0 8px 8px;
+    padding: 2.5rem;
+}
+
+.btn {
+    background-color: var(--Very-light-gray);
+    font-family: 'Lexend Deca', sans-serif;
+    border: 2px solid var(--Very-light-gray);
+    border-radius: 2rem;
+    padding: 0.6rem 1.5rem;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.card-bright-orange .btn {
+    color: var(--bright-orange);
+}
+
+.card-dark-cyan .btn {
+    color: var(--dark-cyan);
+}
+
+.card-very-dark-cyan .btn {
+    color: var(--very-dark-cyan);
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: var(--Very-light-gray);
+}
+
+@media(min-width:992px) {
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 57rem;
+        max-width: 100vh;
+        margin: auto;
+    }
+    .card-bright-orange {
+        border-radius: 8px 0 0 8px;
+    }
+    .card-very-dark-cyan {
+        border-radius: 0 8px 8px 0;
+    }
+    p {
+        margin-bottom: 5rem;
+    }
+}
+
+.attribution {
+    padding: 0.5rem;
+    font-size: 11px;
+    text-align: center;
+    color: black;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

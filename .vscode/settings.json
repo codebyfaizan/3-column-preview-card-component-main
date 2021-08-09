@@ -1,0 +1,7 @@
+{
+    "telemetry.enableCrashReporter": false,
+    "rest-client.enableTelemetry": false,
+    "cSpell.words": [
+        "Lexend"
+    ]
+}
